@@ -1,6 +1,7 @@
 package Request
 
 import (
+	"Mmx/Global"
 	"Mmx/Util"
 	"io/ioutil"
 	"log"
@@ -8,6 +9,21 @@ import (
 	"net/http"
 	"time"
 )
+
+type checker struct{}
+var Checker checker
+
+func (checker) NetOk() bool {
+	var _, err = Get(Global.Config.Settings.TestUrl, nil)
+
+	if err == nil{
+		return true
+	}else {
+		return false
+	}
+
+}
+
 
 func Get(Url string, Query map[string]string) (string, error) {
 	req, err := http.NewRequest("GET", Url, nil)

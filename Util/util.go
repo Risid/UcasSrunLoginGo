@@ -27,7 +27,7 @@ func Search(reg string, content string) (string, error) {
 }
 
 func GetIp(body string) (string, error) {
-	return Search("id=\"user_ip\" value=\"(.*?)\"", body)
+	return Search(`ip\s+:\s+\"(.*?)\"`, body)
 }
 
 func GetToken(body string) (string, error) {
