@@ -2,13 +2,13 @@
 
 国科大2021年5月11日起使用深澜校园网，本项目是一个由Go语言编写的，可以在mips架构的路由器下实现认证功能，自动登录。
 
+支持Windows、Linux、macOS和OpenWRT，[点击此处](https://github.com/Risid/UcasSrunLoginGo/releases)下载现有发行版。
+
 > 深澜校园网登录脚本Go语言版。GO语言可以直接交叉编译出mips架构可执行程序（路由器）（主流平台更不用说了），从而免除安装环境。
 
-代码逻辑来自 https://github.com/coffeehat/BIT-srun-login-script
+> 代码逻辑来自 https://github.com/coffeehat/BIT-srun-login-script
 
-代码fork自 https://github.com/Mmx233/BitSrunLoginGo ，北理的校园网登录脚本。
-
-略微修改，用于国科大的校园网登录。
+> 代码fork自 https://github.com/Mmx233/BitSrunLoginGo ，北理的校园网登录脚本。
 
 **首次运行将生成Config.json文件**
 
