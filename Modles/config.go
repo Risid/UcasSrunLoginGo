@@ -46,8 +46,7 @@ func (a *Config) FillDefault() *Config {
 		},
 		&a.Settings: {
 			"Dns": "1.2.4.8",
-			"TestUrl": "https://hm.baidu.com/h.js",
-			"QuitIfNetOk": true,
+			"TestUrl": "https://t2.chei.com.cn/yz/favicon.ico",
 		},
 	}
 

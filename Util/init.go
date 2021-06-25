@@ -28,7 +28,7 @@ func init() {
 		os.Exit(1)
 	}
 
-	_ = File.WriteJson(Path, c.FillDefault())
+ 	_ = File.WriteJson(Path, c.FillDefault())
 
 	Global.Config = &c
 }

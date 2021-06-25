@@ -2,4 +2,5 @@
 Mmx*
 Config.json
 /GoBuilder.bat
-release/
+release/dist/
+/dist/

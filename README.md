@@ -28,10 +28,10 @@ Config.json说明：
   "enc": "srun_bx1"
  },
  "settings": {
-  "quit_if_net_ok": true,   // 默认true，有网就不尝试登录
+  "quit_if_net_ok": false,   // 默认false，有网仍然尝试登录
   "demo_mode": false,       // 调试模式
   "dns": "1.2.4.8",         // 北京联通DNS
-  "test_url": "https://hm.baidu.com/h.js"   // 用于测试是否有网的网站，务必HTTPS网站，否则会被跳转到认证网址，会被判为有网络。
+  "test_url": "https://t2.chei.com.cn/yz/favicon.ico"   // 用于测试是否有网的网站，务必HTTPS网站，否则会被跳转到认证网址，会被判为有网络。且无Ipv6解析，否则将正常访问。
  }
 }
 ```

@@ -14,10 +14,13 @@ type checker struct{}
 var Checker checker
 
 func (checker) NetOk() bool {
-	var _, err = Get(Global.Config.Settings.TestUrl, nil)
+	var body, err = Get(Global.Config.Settings.TestUrl, nil)
 
 	if err == nil{
-		return true
+		if body != ""{
+			return true
+		}
+		return false
 	}else {
 		return false
 	}
